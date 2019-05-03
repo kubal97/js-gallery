@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Cognifide Recruitment Task</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <!--Boostrap + font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!---->
+        <link rel="stylesheet" href="dist/styles.css">
+    </head>
+    <body id="bootstrap-overrides">
+        <div id="loader"><img src="loading.gif" alt="loading..."></div>
+        <header>
+            <h1>Photo Gallery</h1>
+            <div id="all" onclick="filter('all')" class="btn btn-click active">show all</div>
+            <div id="unsplash" onclick="filter('unsplash')" class="btn btn-click">unsplash</div>
+            <div id="littlevisuals" onclick="filter('littlevisuals')" class="btn btn-click">littlevisuals</div>
+            <div id="travelcoffeebook" onclick="filter('travelcoffeebook')" class="btn btn-click">travelcoffeebook</div>
+            <div id="jaymantri" onclick="filter('jaymantri')" class="btn btn-click">jaymantri</div>
+        </header>
+        <section class="content gallery"></section>
+        <div class="content button"><div onclick="showMore()" class="btn btn-primary more">show more</div></div>
+        <!--<script src="dist/bundle.js"></script>-->
+        <script src="src/js/index.js"></script>
+    </body>
+</html>
